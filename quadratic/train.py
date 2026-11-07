@@ -21,6 +21,6 @@ for step in range(50000):
     optimizer.step()
 
     if step % 1000 == 0:
-        print(f"step {step}")
+        print(f"step {step}; loss: {loss.item()}")
 
 print(model(x))
